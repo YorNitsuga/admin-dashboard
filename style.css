@@ -236,6 +236,46 @@ button {
 
 /* TRENDING SECTION */
 .trending {
-    background-color: brown;
+    background-color: #cbd5e1;
     grid-area: trending;
+}
+
+.trending h3 {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 0 0 10px;
+}
+
+.trend-board {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: fit-content;
+    width: 90%;
+    gap: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.trend-pic {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: olivedrab;
+}
+
+.trend-item {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-name {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
 }
