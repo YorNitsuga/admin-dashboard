@@ -16,10 +16,10 @@
     "dashboard account account account"
     "dashboard projects projects announcements"
     "dashboard projects projects trending";
-    grid-template-rows: 0.7fr 1.5fr 3fr 3fr;
+    grid-template-rows: 0.6fr .9fr 3fr 3fr;
 }
 
-/* search bar section */
+/* SEARCH BAR SECTION */
 .search {
     background-color: white;
     grid-area: search;
@@ -52,10 +52,12 @@
 }
 
 .search-profile-pic {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     grid-column: 6/7;
     cursor: pointer;
+    background-color: olivedrab;
+    border-radius: 50%;
 }
 
 .search-profile-name {
@@ -64,29 +66,79 @@
     grid-column: 7/8;
     cursor: pointer;
     align-content: center;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
-/* account section */
+/* ACCOUNT SECTION */
 .account {
-    background-color: blue;
+    background-color: white;
     grid-area: account;
+    display: grid;
+    grid-template-columns: 0.5fr 52px 5fr 2.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+    gap: 20px;
+    align-items: center;
 }
 
+.account-profile-pic {
+    width: 52px;
+    height: 52px;
+    background-color: olivedrab;
+    border-radius: 50%;
+    cursor: pointer;
+    grid-column: 2/3;
+}
+
+.account-heading {
+    grid-column: 3/4;
+    align-content: center;
+}
+
+.account-heading p {
+    font-weight: bold;
+    height: 20px;
+    width: 100px;
+}
+
+.account-heading h2{
+    font-weight: bold;
+    height: 40px;
+    width: 350px;
+}
+
+.new-btn {
+    grid-column: 5/6;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* DASHBOARD SECTION */
 .dashboard {
     background-color: green;
     grid-area: dashboard;
 }
 
+/* PROJECTS SECTION */
 .projects {
     background-color: yellow;
     grid-area: projects;
 }
 
+/* ANNOUNCEMENTS SECTION */
 .announcements {
     background-color: orange;
     grid-area: announcements;
 }
 
+/* TRENDING SECTION */
 .trending {
     background-color: brown;
     grid-area: trending;
