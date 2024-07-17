@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
-    width: 100%;
 }
 
 /* to set the overall layout of the page */
@@ -126,10 +125,11 @@ button {
     grid-area: dashboard;
     display: grid;
     grid-template-rows: repeat(22, 1fr);
-    padding-left: 15px;
+    padding-left: 20px;
     font-weight: bold;
     font-size: 18px;
     color: white;
+    gap: 15px;
 }
 
 .dashboard-icon {
@@ -150,7 +150,7 @@ button {
     font-size: 30px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .dashboard div {
@@ -203,8 +203,35 @@ button {
 
 /* ANNOUNCEMENTS SECTION */
 .announcements {
-    background-color: orange;
+    background-color: #cbd5e1;
     grid-area: announcements;
+}
+
+.announcements h3 {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 0 0 10px;
+}
+
+.announce-board {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    height: fit-content;
+}
+
+.announce-board div {
+    height: fit-content;
+    width: fit-content;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.announce-board h4 {
+    color: black;
 }
 
 /* TRENDING SECTION */
