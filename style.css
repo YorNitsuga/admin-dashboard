@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* to set the overall layout of the page */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    grid-template-areas: 
+    "dashboard search search search"
+    "dashboard account account account"
+    "dashboard projects projects announcements"
+    "dashboard projects projects trending";
+    grid-template-rows: 0.7fr 1.5fr 3fr 3fr;
+}
+
+/* search bar section */
+.search {
+    background-color: white;
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 0.5fr 20px 10fr 2fr 20px 20px 80px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    grid-column: 2/3;
+    cursor: pointer;
+}
+
+.search-bar {
+    height: 24px;
+    grid-column: 3/4;
+    border-radius: 50px;
+    background-color: #e2e8f0;
+    border: none;
+}
+
+.notif-button {
+    width: 24px;
+    height: 24px;
+    grid-column: 5/6;
+    cursor: pointer;
+}
+
+.search-profile-pic {
+    width: 24px;
+    height: 24px;
+    grid-column: 6/7;
+    cursor: pointer;
+}
+
+.search-profile-name {
+    width: 150px;
+    height: 50px;
+    grid-column: 7/8;
+    cursor: pointer;
+    align-content: center;
+}
+
+/* account section */
+.account {
+    background-color: blue;
+    grid-area: account;
+}
+
+.dashboard {
+    background-color: green;
+    grid-area: dashboard;
+}
+
+.projects {
+    background-color: yellow;
+    grid-area: projects;
+}
+
+.announcements {
+    background-color: orange;
+    grid-area: announcements;
+}
+
+.trending {
+    background-color: brown;
+    grid-area: trending;
+}
