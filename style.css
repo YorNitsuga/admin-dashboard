@@ -15,7 +15,7 @@
     "dashboard account account account"
     "dashboard projects projects announcements"
     "dashboard projects projects trending";
-    grid-template-rows: 0.6fr .9fr 3fr 3fr;
+    grid-template-rows: 0.6fr 1fr 3fr 3fr;
 }
 
 /* SEARCH BAR SECTION */
@@ -197,8 +197,62 @@ button {
 
 /* PROJECTS SECTION */
 .projects {
-    background-color: yellow;
+    background-color: #cbd5e1;
     grid-area: projects;
+}
+
+.projects h2 {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 0 0 10px;
+    margin-left: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    gap: 20px;
+    margin: 10px 20px 20px 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 170px;
+    background: linear-gradient(to right, orange 3%, white 3%);
+    position: relative;
+}
+
+.card-text {
+    height: fit-content;
+    width: fit-content;
+    padding: 0 20px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.card-text h4 {
+    color: black;
+    font-size: 18px;
+}
+
+.card-icons {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card-button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
 /* ANNOUNCEMENTS SECTION */
